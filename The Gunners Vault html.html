@@ -1,0 +1,1323 @@
+<!DOCTYPE html>
+<!-- saved from url=(0117)https://agentix-ai-backend-678884.onrender.com/agentix-files/runs/run_1780319599083_8a240173/step3/web-app-final.html -->
+<html lang="en-GB"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Gunners Vault | Arsenal Fan Content Vault — £47 Lifetime Access</title>
+  <meta name="description" content="The Gunners Vault: 55 Arsenal nostalgia content pieces, quizzes, stories, and history. One payment of £47 for lifetime access.">
+  <meta name="theme-color" content="#c8102e">
+  <meta property="og:title" content="The Gunners Vault — £47 Lifetime Access">
+  <meta property="og:description" content="50+ years of Arsenal history. One payment. Forever access.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="data:image/svg+xml,%3Csvg xmlns=&#39;http://www.w3.org/2000/svg&#39; width=&#39;1200&#39; height=&#39;630&#39;%3E%3Crect width=&#39;1200&#39; height=&#39;630&#39; fill=&#39;%23c8102e&#39;/%3E%3Ctext x=&#39;80&#39; y=&#39;300&#39; fill=&#39;white&#39; font-size=&#39;78&#39; font-family=&#39;Arial&#39;%3EThe Gunners Vault%3C/text%3E%3Ctext x=&#39;80&#39; y=&#39;390&#39; fill=&#39;white&#39; font-size=&#39;44&#39; font-family=&#39;Arial&#39;%3EOne Payment. Forever Access.%3C/text%3E%3C/svg%3E">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Gunners Vault — £47 Lifetime Access">
+  <meta name="twitter:description" content="55 Arsenal fan content pieces with quiz + share features.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns=&#39;http://www.w3.org/2000/svg&#39; viewBox=&#39;0 0 100 100&#39;%3E%3Crect width=&#39;100&#39; height=&#39;100&#39; rx=&#39;18&#39; fill=&#39;%23c8102e&#39;/%3E%3Cpath d=&#39;M20 58h60l-8 10H28zM24 40h52l-7 12H31zM30 28h40l-6 9H36z&#39; fill=&#39;white&#39;/%3E%3C/svg%3E">
+  <style>
+    :root {
+      --red: #c8102e;
+      --red-dark: #9f0d24;
+      --red-soft: #ffe7eb;
+      --ink: #171717;
+      --muted: #555f6f;
+      --bg: #f3f5f8;
+      --panel: #ffffff;
+      --line: #e4e8ef;
+      --gold: #d6a83c;
+      --radius: 14px;
+      --shadow: 0 10px 24px rgba(12, 18, 28, 0.1);
+      --shadow-soft: 0 5px 14px rgba(12, 18, 28, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, Segoe UI, Roboto, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.45;
+      background: var(--bg);
+      color: var(--ink);
+      text-rendering: optimizeLegibility;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    button, input, select { font: inherit; }
+
+    :focus-visible {
+      outline: 3px solid #111;
+      outline-offset: 2px;
+    }
+
+    .sr-only {
+      border: 0;
+      clip: rect(0 0 0 0);
+      clip-path: inset(50%);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+      white-space: nowrap;
+    }
+
+    .wrap { max-width: 1140px; margin: 0 auto; padding: 0 16px; }
+
+    .top {
+      position: sticky;
+      top: 0;
+      z-index: 30;
+      background: #101114;
+      color: #fff;
+      border-bottom: 1px solid #222632;
+      backdrop-filter: saturate(140%) blur(6px);
+    }
+
+    .top-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 12px 0;
+    }
+
+    .brand {
+      font-weight: 800;
+      letter-spacing: 0.2px;
+      font-size: 1.04rem;
+      white-space: nowrap;
+    }
+
+    .brand span { color: var(--red); }
+
+    .nav {
+      display: flex;
+      gap: 14px;
+      color: #dde2ea;
+      font-size: 0.95rem;
+    }
+
+    .nav a {
+      padding: 6px 2px;
+      border-radius: 6px;
+      transition: color .2s ease, background-color .2s ease;
+    }
+
+    .nav a:hover { color: #fff; background: #1f2533; }
+
+    .btn {
+      border: none;
+      background: var(--red);
+      color: #fff;
+      padding: 11px 15px;
+      border-radius: 10px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform .16s ease, background-color .2s ease, box-shadow .22s ease, opacity .2s ease;
+      box-shadow: 0 2px 0 rgba(0, 0, 0, 0.14);
+    }
+
+    .btn:hover { background: var(--red-dark); transform: translateY(-1px); box-shadow: 0 8px 18px rgba(159, 13, 36, 0.25); }
+    .btn:active { transform: translateY(0); }
+    .btn:disabled { cursor: not-allowed; opacity: .72; transform: none; box-shadow: none; }
+    .btn.alt { background: #fff; color: var(--red); border: 1px solid #f0a3b0; box-shadow: none; }
+    .btn.alt:hover { background: #fff8f9; }
+    .btn.ghost { background: transparent; color: var(--red); border: 1px solid #ffd2d8; box-shadow: none; }
+    .btn.ghost:hover { background: #fff0f3; }
+    .btn.small { padding: 7px 10px; font-size: .88rem; }
+
+    .hero {
+      background: radial-gradient(circle at 15% 20%, #4f0612 0%, #221317 44%, #111216 100%);
+      color: #fff;
+      padding: 44px 0 36px;
+      box-shadow: inset 0 -30px 60px rgba(0, 0, 0, 0.14);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr .9fr;
+      gap: 22px;
+      align-items: center;
+    }
+
+    h1 { margin: 0 0 12px; font-size: 2.3rem; line-height: 1.1; }
+    .tag { margin: 0 0 14px; color: #ffeef1; font-size: 1.1rem; }
+    .bullets { padding-left: 18px; margin: 0 0 18px; line-height: 1.6; }
+    .bullets li { margin-bottom: 6px; }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-soft);
+      transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+    }
+
+    .piece.card:hover { transform: translateY(-2px); box-shadow: var(--shadow); border-color: #d8dee8; }
+
+    .price { padding: 18px; }
+    .price h3 { margin: 0 0 8px; }
+    .big { font-size: 2rem; font-weight: 800; color: var(--red); margin-bottom: 4px; }
+
+    .trust {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      color: #f7f7f7;
+      font-size: .9rem;
+      margin-top: 10px;
+    }
+
+    .pill {
+      background: rgba(255, 255, 255, .14);
+      padding: 7px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, .15);
+    }
+
+    .section { padding: 34px 0; }
+    .section h2 { margin: 0 0 14px; font-size: 1.5rem; }
+    #vault, #quiz, #bonus, #faq { scroll-margin-top: 84px; }
+
+    .preview-row, .grid { display: grid; gap: 14px; }
+    .preview-row { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .grid { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 14px; }
+
+    .piece {
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      min-height: 228px;
+      background: linear-gradient(180deg, #fff, #fff 60%, #fefefe);
+    }
+
+    .meta { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+
+    .tag-pill {
+      font-size: .78rem;
+      padding: 5px 9px;
+      border-radius: 999px;
+      background: #ffe9ec;
+      color: #7a0012;
+      font-weight: 700;
+      letter-spacing: .2px;
+      border: 1px solid #ffd2d9;
+    }
+
+    .lock {
+      margin-left: auto;
+      background: #f2f4f7;
+      color: #4b5563;
+      border-color: #e5e7eb;
+    }
+
+    .piece h3 { margin: 0; font-size: 1.03rem; line-height: 1.35; }
+    .piece p { margin: 0; color: var(--muted); line-height: 1.45; }
+
+    .row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+    .row.end { margin-top: auto; }
+
+    .share {
+      border: 1px solid var(--line);
+      background: #fff;
+      padding: 7px 9px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background-color .2s ease, border-color .2s ease, transform .15s ease;
+    }
+
+    .share:hover { background: #f7f9fc; border-color: #cfd8e3; transform: translateY(-1px); }
+
+    .controls { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 10px; margin-top: 8px; }
+    .field {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 10px;
+      width: 100%;
+    }
+
+    .muted { color: var(--muted); }
+    .smallNote { font-size: .85rem; color: #677080; }
+    .center { text-align: center; }
+
+    .status-banner {
+      margin-top: 10px;
+      background: #ebfff4;
+      border: 1px solid #b8e6cc;
+      color: #155c34;
+      padding: 10px 12px;
+      border-radius: 10px;
+      font-weight: 600;
+      animation: fadeSlide .24s ease;
+    }
+
+    .quizWrap, .refWrap, .faq, .footer { padding: 20px; }
+    .q { font-weight: 700; margin-bottom: 12px; font-size: 1.06rem; }
+    .opts { display: grid; gap: 8px; }
+    .opt {
+      padding: 10px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: #fff;
+      cursor: pointer;
+      text-align: left;
+      transition: border-color .2s ease, background-color .2s ease;
+    }
+
+    .opt:hover { border-color: #cfdae7; background: #fafcff; }
+    .opt.sel { border-color: var(--red); background: #fff0f2; }
+
+    .bar {
+      height: 10px;
+      background: #f0f2f6;
+      border-radius: 999px;
+      overflow: hidden;
+      border: 1px solid #e5e9ef;
+    }
+
+    .fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--red), #ff6075);
+      transition: width .28s ease;
+    }
+
+    .bonus {
+      border: 1px dashed #c9b37a;
+      background: #fffaf0;
+      border-radius: 12px;
+      padding: 14px;
+      margin-top: 10px;
+      transition: filter .2s ease;
+    }
+
+    .bonus.locked { filter: blur(2px); pointer-events: none; user-select: none; }
+
+    .empty {
+      margin-top: 14px;
+      padding: 18px;
+      border-radius: 12px;
+      border: 1px dashed #c5ccd8;
+      background: #fff;
+      color: #3f4b5f;
+    }
+
+    .overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, .62);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 42;
+      padding: 14px;
+      animation: fadeIn .16s ease;
+    }
+
+    .modal {
+      max-width: 640px;
+      width: 100%;
+      max-height: 90vh;
+      overflow: auto;
+      padding: 18px;
+      position: relative;
+      animation: zoomIn .18s ease;
+    }
+
+    .close {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      border: 1px solid #dde2ea;
+      background: #f7f9fc;
+      border-radius: 8px;
+      padding: 6px 9px;
+      cursor: pointer;
+      font-weight: 700;
+    }
+
+    .loader { padding: 18px; text-align: center; color: #444; }
+
+    .toast {
+      position: fixed;
+      bottom: 86px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #111;
+      color: #fff;
+      padding: 10px 14px;
+      border-radius: 999px;
+      z-index: 50;
+      box-shadow: 0 14px 30px rgba(0, 0, 0, .35);
+      animation: fadeSlide .2s ease;
+    }
+
+    .sticky {
+      display: none;
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #111;
+      padding: 10px;
+      z-index: 31;
+      border-top: 1px solid #282b31;
+    }
+
+    .sticky .btn { width: 100%; }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes zoomIn {
+      from { transform: translateY(6px) scale(.98); opacity: .6; }
+      to { transform: translateY(0) scale(1); opacity: 1; }
+    }
+
+    @keyframes fadeSlide {
+      from { opacity: 0; transform: translate(-50%, 6px); }
+      to { opacity: 1; transform: translate(-50%, 0); }
+    }
+
+    @media (max-width: 980px) {
+      .hero-grid, .controls, .preview-row, .grid { grid-template-columns: 1fr 1fr; }
+      .nav { display: none; }
+      .top .btn { font-size: .9rem; padding: 9px 11px; }
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 2rem; }
+      .row.tight-mobile .btn,
+      .row.tight-mobile .btn.alt,
+      .row.tight-mobile .btn.ghost { flex: 1 1 auto; }
+    }
+
+    @media (max-width: 680px) {
+      h1 { font-size: 1.86rem; }
+      .hero-grid, .controls, .preview-row, .grid { grid-template-columns: 1fr; }
+      .sticky { display: block; }
+      .section { padding: 28px 0; }
+      .top-inner { gap: 8px; }
+      .top .btn { padding: 9px 11px; font-size: .86rem; }
+      .price { padding: 16px; }
+      .piece { min-height: 205px; }
+      .toast { bottom: 74px; width: calc(100vw - 28px); text-align: center; }
+      body { padding-bottom: 70px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
+    }
+  </style>
+<script src="chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/js/recordConsoleEvents.js"></script></head>
+<body>
+  <div id="root"></div>
+
+  <script src="./The Gunners Vault html_files/react.production.min.js.download"></script>
+  <script src="./The Gunners Vault html_files/react-dom.production.min.js.download"></script>
+  <script src="./The Gunners Vault html_files/babel.min.js.download"></script>
+
+  <script type="text/babel">
+    const { useEffect, useMemo, useRef, useState } = React;
+
+    const PAYMENT_URL = "https://buy.stripe.com/test_00g000000000000000";
+    const DISCOUNT_CODE = "GUNNERS10";
+    const REF_TARGET = 3;
+    const CATS = ["matches", "history", "quizzes", "transfers", "players", "stadium"];
+    const ERAS = ["1970s", "1980s", "1990s", "2000s", "2010s", "2020s"];
+
+    const TITLES = {
+      matches: [
+        "Anfield '89 Revisited",
+        "Invincibles at White Hart Lane",
+        "FA Cup Final 2005 Nerve Test",
+        "North London Derby 5-2 Breakdown",
+        "Highbury Farewell Night",
+        "Arsenal 2-0 Milan Tactical Masterclass",
+        "Thierry Henry's Bernabeu Moment",
+        "Wenger's Old Trafford Win",
+        "Emirates Opener: Dream Debut",
+        "Title Decider at Old Trafford 2002"
+      ],
+      history: [
+        "From Woolwich to North London",
+        "The Chapman Revolution",
+        "The 1930s Dynasty",
+        "George Graham's Defensive Era",
+        "How Wenger Changed English Football",
+        "Arsenal's Greatest Captains Timeline",
+        "The Badge Through the Decades",
+        "Famous Chants and Their Origins",
+        "The Club's Community Legacy",
+        "The Evolution of Arsenal Style"
+      ],
+      quizzes: [
+        "Can You Name the 2003/04 XI?",
+        "Arsenal Cup Finals Trivia",
+        "Guess the Goal Scorer Challenge",
+        "Premier League Milestones Quiz",
+        "Arsenal Managers Knowledge Test",
+        "Legends by Shirt Number",
+        "Transfers: Fee or Free?",
+        "Stadium Memory Quiz"
+      ],
+      transfers: [
+        "The Bergkamp Signing Story",
+        "Campbell's Shock Free Transfer",
+        "How Vieira Nearly Left in 2005",
+        "Sanchez Arrival and Impact",
+        "Ozil Deadline Day Buzz",
+        "Young Talent Recruitment Blueprint",
+        "Big Sales That Reshaped the Squad",
+        "January Window Hits and Misses",
+        "Transfer Rumours Arsenal Fans Believed"
+      ],
+      players: [
+        "Thierry Henry: Beyond the Numbers",
+        "Dennis Bergkamp's Genius",
+        "Tony Adams Leadership Lessons",
+        "Patrick Vieira's Midfield Blueprint",
+        "David Seaman's Greatest Saves",
+        "Ian Wright's Highbury Legacy",
+        "Cesc Fabregas Teenage Breakthrough",
+        "Robert Pires and the Left Side",
+        "Santi Cazorla Fan Favourite Years",
+        "Bukayo Saka's Rise"
+      ],
+      stadium: [
+        "Highbury Matchday Memories",
+        "Clock End Stories",
+        "Emirates Atmosphere Growth",
+        "Best Away Days for Gooners",
+        "Arsenal Museum Hidden Gems",
+        "The Marble Halls Experience",
+        "How Matchday Food Changed",
+        "Stadium Songs That Unite Fans"
+      ]
+    };
+
+    const quizData = {
+      id: "arsenal-history-quiz-01",
+      title: "Arsenal History Quiz",
+      description: "10 questions for proper Gooners.",
+      questions: [
+        { q: "Who managed Arsenal's Invincibles season (2003/04)?", o: ["George Graham", "Arsène Wenger", "Mikel Arteta", "Unai Emery"], a: 1 },
+        { q: "In what year did Arsenal move from Highbury to Emirates Stadium?", o: ["2004", "2006", "2008", "2010"], a: 1 },
+        { q: "Who scored at the Bernabéu in Arsenal's 2006 UCL run?", o: ["Pires", "Reyes", "Henry", "Ljungberg"], a: 2 },
+        { q: "Which defender captained Arsenal through much of the 90s?", o: ["Tony Adams", "Sol Campbell", "Martin Keown", "Lee Dixon"], a: 0 },
+        { q: "Arsenal's nickname is:", o: ["The Lions", "The Gunners", "The Reds", "The Cannons"], a: 1 },
+        { q: "Who is nicknamed 'The King' by Arsenal fans?", o: ["Wright", "Henry", "Bergkamp", "Vieira"], a: 1 },
+        { q: "What colour is most associated with Arsenal home shirts?", o: ["Blue", "Red & White", "Green", "Black"], a: 1 },
+        { q: "Which rival is traditionally linked to the North London Derby?", o: ["Chelsea", "West Ham", "Tottenham", "Fulham"], a: 2 },
+        { q: "Who was Arsenal manager before Wenger?", o: ["Bruce Rioch", "George Graham", "Don Howe", "Terry Neill"], a: 0 },
+        { q: "How many league matches did Arsenal lose in 2003/04?", o: ["0", "1", "2", "3"], a: 0 }
+      ]
+    };
+
+    const clamp = (n, min, max) => Math.max(min, Math.min(max, n));
+
+    const safeLS = {
+      get(key, fallback = "") {
+        try {
+          const v = window.localStorage.getItem(key);
+          return v === null ? fallback : v;
+        } catch {
+          return fallback;
+        }
+      },
+      set(key, value) {
+        try { window.localStorage.setItem(key, String(value)); } catch {}
+      }
+    };
+
+    const makeItems = () => {
+      const intros = {
+        matches: "Relive the tactical turning points and emotion.",
+        history: "A concise chapter from Arsenal's long story.",
+        quizzes: "Short challenge format with answers and context.",
+        transfers: "What happened behind the headlines and why it mattered.",
+        players: "A nostalgia-rich profile of impact and personality.",
+        stadium: "Matchday culture, sounds, and rituals fans remember."
+      };
+
+      const items = [];
+      let idx = 1;
+
+      Object.keys(TITLES).forEach((cat, ci) => {
+        TITLES[cat].forEach((title, i) => {
+          const era = ERAS[(i + ci) % ERAS.length];
+          const featured = i === 0;
+          items.push({
+            id: `c${idx++}`,
+            title,
+            category: cat,
+            era,
+            teaser: `${title} — ${intros[cat]}`,
+            body: `${title} (${era}) explores key moments, supporter perspective, and the context around why this still matters to Arsenal fans today. This vault entry is written for nostalgia and discussion, with quick takeaways you can share with mates before the next matchday.`,
+            isPremium: !featured,
+            featured,
+            shareSlug: title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")
+          });
+        });
+      });
+
+      return items;
+    };
+
+    const trackEvent = (name, data = {}) => {
+      console.log("[trackEvent]", name, { ...data, at: new Date().toISOString() });
+    };
+
+    function App() {
+      const allItems = useMemo(makeItems, []);
+      const modalCloseRef = useRef(null);
+
+      const [hasAccess, setHasAccess] = useState(safeLS.get("gunners_hasAccess", "false") === "true");
+      const [q, setQ] = useState("");
+      const [cat, setCat] = useState("all");
+      const [era, setEra] = useState("all");
+      const [sort, setSort] = useState("featured");
+      const [selected, setSelected] = useState(null);
+      const [loading, setLoading] = useState(false);
+      const [toast, setToast] = useState("");
+      const [emailOpen, setEmailOpen] = useState(false);
+      const [exitOpen, setExitOpen] = useState(false);
+      const [email, setEmail] = useState(safeLS.get("gunners_emailValue", ""));
+      const [emailErr, setEmailErr] = useState("");
+      const [emailOk, setEmailOk] = useState(false);
+      const [isBuying, setIsBuying] = useState("");
+
+      const [refCount, setRefCount] = useState(
+        clamp(parseInt(safeLS.get("gunners_referralCount", "0"), 10) || 0, 0, REF_TARGET)
+      );
+
+      const [quizStart, setQuizStart] = useState(false);
+      const [qi, setQi] = useState(0);
+      const [ans, setAns] = useState([]);
+      const [choice, setChoice] = useState(null);
+      const [qErr, setQErr] = useState("");
+      const [quizLoading, setQuizLoading] = useState(false);
+      const [quizDone, setQuizDone] = useState(false);
+      const [score, setScore] = useState(0);
+      const [bestScore, setBestScore] = useState(clamp(parseInt(safeLS.get("gunners_quizBestScore", "0"), 10) || 0, 0, 10));
+
+      const bonusUnlocked = refCount >= REF_TARGET;
+      const anyModalOpen = Boolean(selected || emailOpen || exitOpen);
+
+      const pageUrl = useMemo(() => {
+        try {
+          const u = new URL(window.location.href);
+          return `${u.origin}${u.pathname}`;
+        } catch {
+          return window.location.href.split(/[?#]/)[0];
+        }
+      }, []);
+
+      useEffect(() => {
+        const paid = new URLSearchParams(window.location.search).get("paid") === "true";
+        if (paid) {
+          setHasAccess(true);
+          safeLS.set("gunners_hasAccess", "true");
+        }
+      }, []);
+
+      useEffect(() => {
+        safeLS.set("gunners_hasAccess", hasAccess);
+      }, [hasAccess]);
+
+      useEffect(() => {
+        safeLS.set("gunners_referralCount", clamp(refCount, 0, REF_TARGET));
+        safeLS.set("gunners_bonusUnlocked", bonusUnlocked);
+      }, [refCount, bonusUnlocked]);
+
+      useEffect(() => {
+        if (!toast) return;
+        const t = setTimeout(() => setToast(""), 1900);
+        return () => clearTimeout(t);
+      }, [toast]);
+
+      useEffect(() => {
+        setLoading(true);
+        const t = setTimeout(() => setLoading(false), 180);
+        return () => clearTimeout(t);
+      }, [q, cat, era, sort]);
+
+      useEffect(() => {
+        if (anyModalOpen) {
+          const prev = document.body.style.overflow;
+          document.body.style.overflow = "hidden";
+          return () => { document.body.style.overflow = prev; };
+        }
+      }, [anyModalOpen]);
+
+      useEffect(() => {
+        const onEsc = (e) => {
+          if (e.key !== "Escape") return;
+          if (selected) {
+            setSelected(null);
+          } else if (emailOpen) {
+            setEmailOpen(false);
+            safeLS.set("gunners_emailModalSeen", "true");
+          } else if (exitOpen) {
+            setExitOpen(false);
+          }
+        };
+        document.addEventListener("keydown", onEsc);
+        return () => document.removeEventListener("keydown", onEsc);
+      }, [selected, emailOpen, exitOpen]);
+
+      useEffect(() => {
+        if (!anyModalOpen) return;
+        const t = setTimeout(() => {
+          if (modalCloseRef.current) modalCloseRef.current.focus();
+        }, 20);
+        return () => clearTimeout(t);
+      }, [anyModalOpen]);
+
+      useEffect(() => {
+        if (safeLS.get("gunners_emailModalSeen", "false") === "true") return;
+        if (safeLS.get("gunners_emailCaptured", "false") === "true") return;
+
+        let shown = false;
+        const show = () => {
+          if (shown) return;
+          shown = true;
+          setEmailOpen(true);
+          safeLS.set("gunners_emailModalSeen", "true");
+          trackEvent("email_popup_shown");
+        };
+
+        const timer = setTimeout(show, 12000);
+        const onScroll = () => {
+          const max = document.body.scrollHeight - window.innerHeight || 1;
+          const pct = window.scrollY / max;
+          if (pct > 0.4) {
+            show();
+            window.removeEventListener("scroll", onScroll);
+          }
+        };
+
+        window.addEventListener("scroll", onScroll, { passive: true });
+        return () => {
+          clearTimeout(timer);
+          window.removeEventListener("scroll", onScroll);
+        };
+      }, []);
+
+      useEffect(() => {
+        if (safeLS.get("gunners_exitShown", "false") === "true") return;
+
+        let shown = false;
+        const trigger = () => {
+          if (shown) return;
+          shown = true;
+          setExitOpen(true);
+          safeLS.set("gunners_exitShown", "true");
+          trackEvent("exit_popup_shown");
+        };
+
+        const onLeave = (e) => {
+          if (e.clientY <= 0 && !e.relatedTarget) trigger();
+        };
+
+        if (window.innerWidth > 800) {
+          document.addEventListener("mouseout", onLeave);
+          return () => document.removeEventListener("mouseout", onLeave);
+        }
+
+        const timer = setTimeout(() => {
+          if (window.scrollY > 120 || !hasAccess) trigger();
+        }, 24000);
+
+        return () => clearTimeout(timer);
+      }, [hasAccess]);
+
+      const items = useMemo(() => {
+        const query = q.trim().toLowerCase();
+        let out = [...allItems].filter((i) => {
+          const hit = `${i.title} ${i.teaser} ${i.body}`.toLowerCase();
+          return (cat === "all" || i.category === cat) && (era === "all" || i.era === era) && (!query || hit.includes(query));
+        });
+
+        if (sort === "a-z") out.sort((a, b) => a.title.localeCompare(b.title));
+        if (sort === "category") out.sort((a, b) => `${a.category} ${a.title}`.localeCompare(`${b.category} ${b.title}`));
+        if (sort === "featured") out.sort((a, b) => (b.featured - a.featured) || a.title.localeCompare(b.title));
+
+        return out;
+      }, [allItems, q, cat, era, sort]);
+
+      const copyText = async (txt, okMsg = "Copied to clipboard") => {
+        try {
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            await navigator.clipboard.writeText(txt);
+          } else {
+            const helper = document.createElement("textarea");
+            helper.value = txt;
+            helper.setAttribute("readonly", "");
+            helper.style.position = "absolute";
+            helper.style.left = "-9999px";
+            document.body.appendChild(helper);
+            helper.select();
+            document.execCommand("copy");
+            document.body.removeChild(helper);
+          }
+          setToast(okMsg);
+          return true;
+        } catch {
+          setToast("Copy failed. Please copy manually.");
+          return false;
+        }
+      };
+
+      const pieceShareText = (item) => `Check out "${item.title}" in The Gunners Vault — Arsenal nostalgia and stories.`;
+
+      const share = (net, text, url = pageUrl) => {
+        const links = {
+          x: `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`,
+          fb: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}&quote=${encodeURIComponent(text)}`,
+          wa: `https://wa.me/?text=${encodeURIComponent(`${text} ${url}`)}`
+        };
+
+        const target = links[net];
+        if (!target) {
+          copyText(`${text} ${url}`);
+          return;
+        }
+
+        const popup = window.open(target, "_blank", "noopener,noreferrer,width=620,height=520");
+        if (!popup) {
+          copyText(`${text} ${url}`, "Popup blocked. Share text copied.");
+        }
+
+        trackEvent("share_click", { network: net });
+      };
+
+      const doBuy = (src) => {
+        trackEvent("purchase_click", { src });
+        setIsBuying(src);
+        const w = window.open(PAYMENT_URL, "_blank", "noopener,noreferrer");
+        if (!w) {
+          setToast("Checkout popup blocked. Please allow popups.");
+        } else {
+          setToast("Checkout opened in new tab");
+        }
+        setTimeout(() => setIsBuying(""), 900);
+      };
+
+      const unlockDemo = () => {
+        setHasAccess(true);
+        setToast("Vault unlocked on this device");
+        trackEvent("manual_unlock");
+      };
+
+      const submitEmail = (e) => {
+        e.preventDefault();
+        const clean = email.trim();
+        const ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(clean);
+        if (!ok) {
+          setEmailErr("Please enter a valid email address.");
+          return;
+        }
+
+        setEmailErr("");
+        setEmailOk(true);
+        safeLS.set("gunners_emailCaptured", "true");
+        safeLS.set("gunners_emailValue", clean);
+        safeLS.set("gunners_emailModalSeen", "true");
+        trackEvent("email_captured");
+      };
+
+      const closeEmail = () => {
+        setEmailOpen(false);
+        safeLS.set("gunners_emailModalSeen", "true");
+      };
+
+      const closeExit = () => {
+        setExitOpen(false);
+      };
+
+      const startQuiz = () => {
+        setQuizStart(true);
+        setQuizDone(false);
+        setQi(0);
+        setAns([]);
+        setChoice(null);
+        setScore(0);
+        setQErr("");
+        trackEvent("quiz_started");
+      };
+
+      const nextQuiz = () => {
+        if (choice === null) {
+          setQErr("Pick an answer before continuing.");
+          return;
+        }
+
+        const next = [...ans, choice];
+        setAns(next);
+        setChoice(null);
+        setQErr("");
+
+        if (qi === quizData.questions.length - 1) {
+          setQuizLoading(true);
+          setTimeout(() => {
+            const s = next.reduce((t, a, i) => t + (a === quizData.questions[i].a ? 1 : 0), 0);
+            setScore(s);
+            setQuizDone(true);
+            setQuizLoading(false);
+            const nextBest = Math.max(s, bestScore);
+            setBestScore(nextBest);
+            safeLS.set("gunners_quizBestScore", nextBest);
+            trackEvent("quiz_completed", { score: s });
+          }, 400);
+        } else {
+          setQi((p) => p + 1);
+        }
+      };
+
+      const tier = score >= 9 ? "Legend" : score >= 6 ? "Proper Gooner" : "Rising Gooner";
+      const quizShare = `I scored ${score}/10 on Arsenal history! Can you beat me?`;
+
+      const openItem = (item) => {
+        setSelected(item);
+        trackEvent("open_content", { id: item.id });
+      };
+
+      const canRead = (item) => !item.isPremium || hasAccess;
+      const featured = allItems.filter((i) => i.featured).slice(0, 6);
+      const resultSummary = `${items.length} result${items.length === 1 ? "" : "s"}`;
+
+      const resetFilters = () => {
+        setQ("");
+        setCat("all");
+        setEra("all");
+        setSort("featured");
+      };
+
+      return (
+        <>
+          <header className="top">
+            <div className="wrap top-inner">
+              <div className="brand">The <span>Gunners</span> Vault</div>
+
+              <nav className="nav" aria-label="Primary">
+                <a href="#vault">Vault</a>
+                <a href="#quiz">Quiz</a>
+                <a href="#bonus">Bonus</a>
+                <a href="#faq">FAQs</a>
+              </nav>
+
+              <button
+                type="button"
+                className="btn"
+                onClick={() => doBuy("header")}
+                disabled={isBuying === "header"}
+                aria-label="Get lifetime access for forty seven pounds"
+              >
+                {isBuying === "header" ? "Opening…" : "Get Lifetime Access — £47"}
+              </button>
+            </div>
+          </header>
+
+          <main>
+            <section className="hero" aria-labelledby="hero-title">
+              <div className="wrap hero-grid">
+                <div>
+                  <h1 id="hero-title">The Gunners Vault</h1>
+                  <p className="tag">50+ Years of Arsenal History. One Payment. Forever Access.</p>
+
+                  <ul className="bullets">
+                    <li>55 nostalgia-packed content pieces across 6 categories</li>
+                    <li>One-time payment: <strong>£47</strong> for lifetime access</li>
+                    <li>Share quizzes, stories, and unlock bonus fan content</li>
+                  </ul>
+
+                  <div className="row tight-mobile">
+                    <button type="button" className="btn" onClick={() => doBuy("hero")} disabled={isBuying === "hero"}>
+                      {isBuying === "hero" ? "Opening checkout…" : "Get Lifetime Access — £47"}
+                    </button>
+                    <a className="btn alt" href="#vault">Preview Content</a>
+                    <button type="button" className="btn ghost" onClick={unlockDemo}>I already purchased (demo unlock)</button>
+                  </div>
+
+                  <div className="trust" aria-label="Trust indicators">
+                    <span className="pill">One-time payment</span>
+                    <span className="pill">Instant access</span>
+                    <span className="pill">Mobile friendly</span>
+                  </div>
+
+                  {hasAccess && <p className="status-banner" role="status">Vault access is active on this browser.</p>}
+                </div>
+
+                <aside className="card price" aria-label="Pricing card">
+                  <h3>Lifetime Arsenal Vault</h3>
+                  <div className="big">£47</div>
+                  <p className="muted">No subscription. No monthly fees. Keep your access forever on this browser.</p>
+                  <button
+                    type="button"
+                    className="btn"
+                    style={{ width: "100%" }}
+                    onClick={() => doBuy("price-card")}
+                    disabled={isBuying === "price-card"}
+                  >
+                    {isBuying === "price-card" ? "Opening…" : "Pay with Stripe"}
+                  </button>
+                  <p className="smallNote">Fan-made project. Replace Stripe URL before launch.</p>
+                </aside>
+              </div>
+            </section>
+
+            <section className="section" aria-labelledby="featured-heading">
+              <div className="wrap">
+                <h2 id="featured-heading">Featured Previews</h2>
+                <div className="preview-row">
+                  {featured.map((item) => (
+                    <article key={item.id} className="card piece">
+                      <div className="meta">
+                        <span className="tag-pill">{item.category}</span>
+                        <span className="tag-pill">{item.era}</span>
+                      </div>
+                      <h3>{item.title}</h3>
+                      <p>{item.teaser}</p>
+                      <div className="row end">
+                        <button type="button" className="btn small" onClick={() => openItem(item)}>Open Preview</button>
+                      </div>
+                    </article>
+                  ))}
+                </div>
+              </div>
+            </section>
+
+            <section className="section" id="vault" aria-labelledby="vault-heading">
+              <div className="wrap">
+                <h2 id="vault-heading">Browse the Vault ({allItems.length} Pieces)</h2>
+
+                <div className="controls" role="group" aria-label="Content filters">
+                  <div>
+                    <label className="sr-only" htmlFor="searchInput">Search content</label>
+                    <input
+                      id="searchInput"
+                      className="field"
+                      placeholder="Search matches, legends, transfers..."
+                      value={q}
+                      onChange={(e) => setQ(e.target.value)}
+                    />
+                  </div>
+
+                  <div>
+                    <label className="sr-only" htmlFor="categorySelect">Filter by category</label>
+                    <select id="categorySelect" className="field" value={cat} onChange={(e) => setCat(e.target.value)}>
+                      <option value="all">All Categories</option>
+                      {CATS.map((c) => <option key={c} value={c}>{c[0].toUpperCase() + c.slice(1)}</option>)}
+                    </select>
+                  </div>
+
+                  <div>
+                    <label className="sr-only" htmlFor="eraSelect">Filter by era</label>
+                    <select id="eraSelect" className="field" value={era} onChange={(e) => setEra(e.target.value)}>
+                      <option value="all">All Eras</option>
+                      {ERAS.map((e) => <option key={e} value={e}>{e}</option>)}
+                    </select>
+                  </div>
+
+                  <div>
+                    <label className="sr-only" htmlFor="sortSelect">Sort results</label>
+                    <select id="sortSelect" className="field" value={sort} onChange={(e) => setSort(e.target.value)}>
+                      <option value="featured">Featured</option>
+                      <option value="a-z">A–Z</option>
+                      <option value="category">Category</option>
+                    </select>
+                  </div>
+                </div>
+
+                <p className="smallNote" aria-live="polite" style={{ marginTop: 10 }}>
+                  {loading ? "Refreshing results…" : resultSummary}
+                </p>
+
+                {loading ? (
+                  <div className="loader" role="status" aria-live="polite">Loading content...</div>
+                ) : (
+                  <div className="grid">
+                    {items.map((item) => {
+                      const unlocked = canRead(item);
+                      return (
+                        <article key={item.id} className="card piece">
+                          <div className="meta">
+                            <span className="tag-pill">{item.category}</span>
+                            <span className="tag-pill">{item.era}</span>
+                            <span className="tag-pill lock">{unlocked ? "Unlocked" : "Locked"}</span>
+                          </div>
+
+                          <h3>{item.title}</h3>
+                          <p>{item.teaser}</p>
+
+                          <div className="row end">
+                            <button type="button" className="btn small" onClick={() => openItem(item)}>{unlocked ? "Read" : "Preview"}</button>
+                            <button type="button" className="share" onClick={() => share("x", pieceShareText(item), `${pageUrl}#piece-${item.shareSlug}`)} aria-label={`Share ${item.title} on X`}>X</button>
+                            <button type="button" className="share" onClick={() => share("fb", pieceShareText(item), `${pageUrl}#piece-${item.shareSlug}`)} aria-label={`Share ${item.title} on Facebook`}>Facebook</button>
+                            <button type="button" className="share" onClick={() => share("wa", pieceShareText(item), `${pageUrl}#piece-${item.shareSlug}`)} aria-label={`Share ${item.title} on WhatsApp`}>WhatsApp</button>
+                          </div>
+                        </article>
+                      );
+                    })}
+                  </div>
+                )}
+
+                {!loading && items.length === 0 && (
+                  <div className="empty" role="status" aria-live="polite">
+                    <p style={{ marginTop: 0, marginBottom: 10 }}><strong>No results found.</strong> Try broader terms or reset filters.</p>
+                    <button type="button" className="btn small" onClick={resetFilters}>Reset Filters</button>
+                  </div>
+                )}
+              </div>
+            </section>
+
+            <section className="section" id="quiz" aria-labelledby="quiz-heading">
+              <div className="wrap">
+                <h2 id="quiz-heading">Arsenal History Quiz</h2>
+                <div className="card quizWrap">
+                  {!quizStart && !quizDone && (
+                    <>
+                      <p>{quizData.description} Finish and share your result with friends.</p>
+                      <button type="button" className="btn" onClick={startQuiz}>Start 10-Question Quiz</button>
+                    </>
+                  )}
+
+                  {quizStart && !quizDone && !quizLoading && (
+                    <>
+                      <div className="row" style={{ justifyContent: "space-between", marginBottom: 8 }}>
+                        <div className="muted">Q{qi + 1} of {quizData.questions.length}</div>
+                        <div className="smallNote">Progress: {Math.round(((qi + 1) / quizData.questions.length) * 100)}%</div>
+                      </div>
+
+                      <div className="bar" aria-hidden="true" style={{ marginBottom: 12 }}>
+                        <div className="fill" style={{ width: `${((qi + 1) / quizData.questions.length) * 100}%` }} />
+                      </div>
+
+                      <p className="q">{quizData.questions[qi].q}</p>
+
+                      <div className="opts" role="radiogroup" aria-label={`Question ${qi + 1}`}>
+                        {quizData.questions[qi].o.map((op, i) => (
+                          <button
+                            key={i}
+                            type="button"
+                            className={`opt ${choice === i ? "sel" : ""}`}
+                            onClick={() => setChoice(i)}
+                            aria-pressed={choice === i}
+                          >
+                            {op}
+                          </button>
+                        ))}
+                      </div>
+
+                      {qErr && <p style={{ color: "#b10017", marginBottom: 0 }}>{qErr}</p>}
+
+                      <div className="row" style={{ marginTop: 12 }}>
+                        <button type="button" className="btn" onClick={nextQuiz}>
+                          {qi === quizData.questions.length - 1 ? "Submit Quiz" : "Next Question"}
+                        </button>
+                      </div>
+                    </>
+                  )}
+
+                  {quizLoading && <div className="loader" role="status">Calculating your score...</div>}
+
+                  {quizDone && (
+                    <>
+                      <h3>You scored {score}/10 — {tier}</h3>
+                      <p className="muted">Best on this device: {bestScore}/10</p>
+
+                      <div className="row">
+                        <button type="button" className="share" onClick={() => share("x", quizShare)}>Share on X</button>
+                        <button type="button" className="share" onClick={() => share("fb", quizShare)}>Share on Facebook</button>
+                        <button type="button" className="share" onClick={() => share("wa", quizShare)}>Share on WhatsApp</button>
+                        <button type="button" className="btn small" onClick={startQuiz}>Retry Quiz</button>
+                      </div>
+                    </>
+                  )}
+                </div>
+              </div>
+            </section>
+
+            <section className="section" id="bonus" aria-labelledby="bonus-heading">
+              <div className="wrap">
+                <h2 id="bonus-heading">Referral Bonus Unlock</h2>
+                <div className="card refWrap">
+                  <p>
+                    <strong>Share with 3 friends, unlock bonus content.</strong>{" "}
+                    <span className="smallNote">(Share tracker on this device)</span>
+                  </p>
+
+                  <div className="row">
+                    <input className="field" style={{ flex: 1 }} readOnly value={`${pageUrl}?ref=gunners-vault`} aria-label="Referral link" />
+                    <button type="button" className="btn small" onClick={() => { copyText(`${pageUrl}?ref=gunners-vault`, "Referral link copied"); trackEvent("ref_link_copy"); }}>Copy</button>
+                    <button type="button" className="btn small" onClick={() => { setRefCount((prev) => clamp(prev + 1, 0, REF_TARGET)); trackEvent("ref_increment", { count: refCount + 1 }); }} disabled={bonusUnlocked}>
+                      {bonusUnlocked ? "Target Reached" : "I Shared"}
+                    </button>
+                  </div>
+
+                  <div className="row" style={{ marginTop: 8 }}>
+                    <div className="bar" style={{ flex: 1 }}>
+                      <div className="fill" style={{ width: `${(clamp(refCount, 0, REF_TARGET) / REF_TARGET) * 100}%` }} />
+                    </div>
+                    <strong>{clamp(refCount, 0, REF_TARGET)}/{REF_TARGET}</strong>
+                  </div>
+
+                  <div className={`bonus ${bonusUnlocked ? "" : "locked"}`}>
+                    <h3>Bonus: Arsenal Cult Heroes Deep Dive</h3>
+                    <p>Exclusive piece on fan favourites who defined eras without always taking headlines. Includes chant history and iconic moments.</p>
+                  </div>
+
+                  {bonusUnlocked
+                    ? <p style={{ color: "#166534" }}>Unlocked! Bonus content is now available on this browser.</p>
+                    : <p className="muted">Keep sharing to unlock bonus content.</p>}
+                </div>
+              </div>
+            </section>
+
+            <section className="section" id="faq" aria-labelledby="faq-heading">
+              <div className="wrap">
+                <div className="card faq">
+                  <h2 id="faq-heading">FAQs</h2>
+                  <p><strong>Is this official Arsenal content?</strong><br />No. This is an unofficial fan-made nostalgia project.</p>
+                  <p><strong>How does access work?</strong><br />In this no-backend build, access is stored in localStorage on your device.</p>
+                  <p><strong>Can I use a discount code?</strong><br />Yes — use <strong>{DISCOUNT_CODE}</strong> in your checkout setup.</p>
+                </div>
+              </div>
+            </section>
+          </main>
+
+          <footer className="section">
+            <div className="wrap">
+              <div className="card footer">
+                <p><strong>The Gunners Vault</strong> • One-time purchase fan content experience for Arsenal supporters.</p>
+                <p className="smallNote">
+                  Disclaimer: Arsenal name and related marks belong to their respective owners.
+                  Contact: <a href="mailto:hello@gunnersvault.example">hello@gunnersvault.example</a>
+                </p>
+              </div>
+            </div>
+          </footer>
+
+          <div className="sticky" aria-hidden="false">
+            <div className="wrap">
+              <button type="button" className="btn" onClick={() => doBuy("sticky-mobile")} disabled={isBuying === "sticky-mobile"}>
+                {isBuying === "sticky-mobile" ? "Opening…" : "Get Lifetime Access — £47"}
+              </button>
+            </div>
+          </div>
+
+          {selected && (
+            <div className="overlay" onClick={() => setSelected(null)}>
+              <div className="card modal" role="dialog" aria-modal="true" aria-label="Content detail" onClick={(e) => e.stopPropagation()}>
+                <button type="button" ref={modalCloseRef} className="close" onClick={() => setSelected(null)} aria-label="Close dialog">✕</button>
+
+                <h3>{selected.title}</h3>
+                <div className="meta">
+                  <span className="tag-pill">{selected.category}</span>
+                  <span className="tag-pill">{selected.era}</span>
+                </div>
+
+                {canRead(selected) ? (
+                  <>
+                    <p>{selected.body}</p>
+                    <div className="row" style={{ marginTop: 10 }}>
+                      <button type="button" className="share" onClick={() => share("x", pieceShareText(selected), `${pageUrl}#piece-${selected.shareSlug}`)}>Share X</button>
+                      <button type="button" className="share" onClick={() => share("fb", pieceShareText(selected), `${pageUrl}#piece-${selected.shareSlug}`)}>Facebook</button>
+                      <button type="button" className="share" onClick={() => share("wa", pieceShareText(selected), `${pageUrl}#piece-${selected.shareSlug}`)}>WhatsApp</button>
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <p>{selected.teaser}</p>
+                    <div className="card" style={{ padding: 12, background: "#fff3f5", borderColor: "#ffd4da", boxShadow: "none" }}>
+                      <p><strong>This is premium vault content.</strong> Unlock all 55 pieces for one payment of £47.</p>
+                      <div className="row">
+                        <button type="button" className="btn" onClick={() => doBuy("modal-paywall")}>Get Lifetime Access</button>
+                        <button type="button" className="btn ghost" onClick={unlockDemo}>Demo Unlock</button>
+                      </div>
+                    </div>
+                  </>
+                )}
+              </div>
+            </div>
+          )}
+
+          {emailOpen && (
+            <div className="overlay" onClick={closeEmail}>
+              <div className="card modal" role="dialog" aria-modal="true" aria-label="Email capture" onClick={(e) => e.stopPropagation()}>
+                <button type="button" ref={modalCloseRef} className="close" onClick={closeEmail} aria-label="Close dialog">✕</button>
+
+                {!emailOk ? (
+                  <>
+                    <h3>Enter email to get FREE Arsenal quiz + vault discount code</h3>
+                    <form onSubmit={submitEmail} noValidate>
+                      <label htmlFor="emailInput" className="sr-only">Email address</label>
+                      <input
+                        id="emailInput"
+                        className="field"
+                        style={{ width: "100%" }}
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        placeholder="you@example.com"
+                        inputMode="email"
+                        autoComplete="email"
+                        aria-invalid={emailErr ? "true" : "false"}
+                      />
+
+                      {emailErr && <p style={{ color: "#b10017" }}>{emailErr}</p>}
+
+                      <div className="row" style={{ marginTop: 10 }}>
+                        <button type="submit" className="btn">Get My Free Quiz + Code</button>
+                        <button type="button" className="btn alt" onClick={closeEmail}>No thanks</button>
+                      </div>
+                    </form>
+
+                    <p className="smallNote">Stored locally only in this demo (no backend).</p>
+                  </>
+                ) : (
+                  <>
+                    <h3>Thanks! Your code: {DISCOUNT_CODE}</h3>
+                    <p>Use it for 10% off and jump into the Arsenal history quiz.</p>
+                    <div className="row">
+                      <a className="btn" href="#quiz" onClick={closeEmail}>Start Free Quiz</a>
+                      <button type="button" className="btn alt" onClick={closeEmail}>Close</button>
+                    </div>
+                  </>
+                )}
+              </div>
+            </div>
+          )}
+
+          {exitOpen && (
+            <div className="overlay" onClick={closeExit}>
+              <div className="card modal" role="dialog" aria-modal="true" aria-label="Exit offer" onClick={(e) => e.stopPropagation()}>
+                <button type="button" ref={modalCloseRef} className="close" onClick={closeExit} aria-label="Close dialog">✕</button>
+
+                <h3>Wait! Get 10% off before you go</h3>
+                <p>Use code <strong>{DISCOUNT_CODE}</strong> at checkout. Offer shown once per visitor.</p>
+                <div className="row">
+                  <button type="button" className="btn" onClick={() => copyText(DISCOUNT_CODE, "Discount code copied")}>Copy Code</button>
+                  <button type="button" className="btn alt" onClick={() => doBuy("exit-intent")}>Claim Discount & Buy</button>
+                </div>
+                <p className="smallNote">If checkout link is placeholder, replace PAYMENT_URL in code.</p>
+              </div>
+            </div>
+          )}
+
+          {toast && <div className="toast" role="status" aria-live="polite">{toast}</div>}
+        </>
+      );
+    }
+
+    ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+  </script>
+
+
+<div id="phedra-x-shadow-host" style="position: fixed; top: 0px; left: 0px; width: 0px; height: 0px; pointer-events: none; z-index: 2147483647;"><template shadowrootmode="closed"><iframe id="phedra-x-popup" allow="clipboard-write;" data-state="closed" src="chrome-extension://jckigdhmponckmebbhbfenjmofkklnif/index.html" style="position: fixed; top: 12px; right: 12px; width: 450px; height: 673px; border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; transform: translateX(calc(100% + 20px)); z-index: 2147483647; transition: transform 0.3s; overflow: hidden; pointer-events: auto;"></iframe></template></div></body></html>
